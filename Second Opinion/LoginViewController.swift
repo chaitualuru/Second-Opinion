@@ -48,14 +48,6 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginOnPressed(sender: AnyObject) {
-        let emailSavedFromNSUserDefaults: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey(kemailKey) as! String
-        
-        println(emailSavedFromNSUserDefaults)
-        
-        let passwordSavedFromNSUserDefaults: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey(kpasswordKey) as! String
-        
-        println(passwordSavedFromNSUserDefaults)
-
         println("Query Part")
         var query = PFQuery(className:"patients")
         query.whereKey("email", equalTo:emailTextField.text)
@@ -75,7 +67,6 @@ class LoginViewController: UIViewController {
                         NSUserDefaults.standardUserDefaults().setObject(self.passwordTextField.text, forKey: kpasswordKey)
                         NSUserDefaults.standardUserDefaults().synchronize()
                     }
-                    
                 }
             }
             else {

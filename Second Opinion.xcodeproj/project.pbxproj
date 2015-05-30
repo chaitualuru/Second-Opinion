@@ -14,6 +14,7 @@
 		FF19F6111B19CF4D0063B39C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF19F6101B19CF4D0063B39C /* Images.xcassets */; };
 		FF19F6141B19CF4D0063B39C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF19F6121B19CF4D0063B39C /* LaunchScreen.xib */; };
 		FF19F6201B19CF4D0063B39C /* Second_OpinionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19F61F1B19CF4D0063B39C /* Second_OpinionTests.swift */; };
+		FF19F6401B19D8360063B39C /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FF19F63F1B19D8360063B39C /* SplashScreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		FF19F6191B19CF4D0063B39C /* Second OpinionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Second OpinionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF19F61E1B19CF4D0063B39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF19F61F1B19CF4D0063B39C /* Second_OpinionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second_OpinionTests.swift; sourceTree = "<group>"; };
+		FF19F63F1B19D8360063B39C /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				FF19F60B1B19CF4D0063B39C /* ViewController.swift */,
 				FF19F60D1B19CF4D0063B39C /* Main.storyboard */,
 				FF19F6101B19CF4D0063B39C /* Images.xcassets */,
+				FF19F63F1B19D8360063B39C /* SplashScreen.png */,
 				FF19F6121B19CF4D0063B39C /* LaunchScreen.xib */,
 				FF19F6081B19CF4D0063B39C /* Second_Opinion.xcdatamodeld */,
 				FF19F6041B19CF4D0063B39C /* Supporting Files */,
@@ -197,6 +200,7 @@
 			files = (
 				FF19F60F1B19CF4D0063B39C /* Main.storyboard in Resources */,
 				FF19F6141B19CF4D0063B39C /* LaunchScreen.xib in Resources */,
+				FF19F6401B19D8360063B39C /* SplashScreen.png in Resources */,
 				FF19F6111B19CF4D0063B39C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

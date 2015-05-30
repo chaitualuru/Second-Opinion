@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E975A406-BE54-4F9E-A0EC-7E73D67A1C84</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Second Opinion</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D342AF7E4E4C029FD63CD2ABDB823C4F6E48202C</key>
 		<string>https://github.com/kcaluru/Second-Opinion.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Second Opinion.xcodeproj/project.xcworkspace</string>
+	<string>Second Opinion.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D342AF7E4E4C029FD63CD2ABDB823C4F6E48202C</key>

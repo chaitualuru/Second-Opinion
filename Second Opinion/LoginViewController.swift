@@ -66,6 +66,7 @@ class LoginViewController: UIViewController {
             if error == nil {
                 // The find succeeded.
                 // Do something with the found objects
+                println(objects)
                 if let objects = objects as? [PFObject] {
                     for object in objects {
                         println(object)

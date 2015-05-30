@@ -10,7 +10,6 @@
 		BA38844A1B19DF7100A63A0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3884491B19DF7100A63A0A /* MainViewController.swift */; };
 		BA38844C1B19DF8800A63A0A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38844B1B19DF8800A63A0A /* LoginViewController.swift */; };
 		BA38844E1B19DF9900A63A0A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38844D1B19DF9900A63A0A /* RegisterViewController.swift */; };
-		BA3884501B19F29F00A63A0A /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BA38844F1B19F29F00A63A0A /* back.png */; };
 		BA3884521B19FCD900A63A0A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3884511B19FCD900A63A0A /* Bolts.framework */; };
 		BA3884541B19FCE500A63A0A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3884531B19FCE500A63A0A /* Parse.framework */; };
 		BA3884561B19FD0B00A63A0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3884551B19FD0B00A63A0A /* AudioToolbox.framework */; };
@@ -33,6 +32,7 @@
 		FF19F6141B19CF4D0063B39C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF19F6121B19CF4D0063B39C /* LaunchScreen.xib */; };
 		FF19F6201B19CF4D0063B39C /* Second_OpinionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19F61F1B19CF4D0063B39C /* Second_OpinionTests.swift */; };
 		FF19F6401B19D8360063B39C /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FF19F63F1B19D8360063B39C /* SplashScreen.png */; };
+		FF8244C31B1A5DD500CD62AB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8244C21B1A5DD500CD62AB /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 		BA3884491B19DF7100A63A0A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BA38844B1B19DF8800A63A0A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BA38844D1B19DF9900A63A0A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		BA38844F1B19F29F00A63A0A /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		BA3884511B19FCD900A63A0A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		BA3884531B19FCE500A63A0A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BA3884551B19FD0B00A63A0A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -76,6 +75,7 @@
 		FF19F61E1B19CF4D0063B39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF19F61F1B19CF4D0063B39C /* Second_OpinionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second_OpinionTests.swift; sourceTree = "<group>"; };
 		FF19F63F1B19D8360063B39C /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
+		FF8244C21B1A5DD500CD62AB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,7 @@
 		FF19F6041B19CF4D0063B39C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BA38844F1B19F29F00A63A0A /* back.png */,
+				FF8244C21B1A5DD500CD62AB /* back.png */,
 				FF19F6051B19CF4D0063B39C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -268,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF19F60F1B19CF4D0063B39C /* Main.storyboard in Resources */,
-				BA3884501B19F29F00A63A0A /* back.png in Resources */,
+				FF8244C31B1A5DD500CD62AB /* back.png in Resources */,
 				FF19F6141B19CF4D0063B39C /* LaunchScreen.xib in Resources */,
 				FF19F6401B19D8360063B39C /* SplashScreen.png in Resources */,
 				FF19F6111B19CF4D0063B39C /* Images.xcassets in Resources */,

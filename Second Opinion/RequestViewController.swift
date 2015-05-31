@@ -49,7 +49,6 @@ class RequestViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         //imageView = cameraImage
         
         presentViewController(picker, animated: true, completion: nil)
-        uploadImagePressed(picker)
     }
     
     @IBAction func pickFromGallery(sender: UIButton) {
@@ -60,11 +59,11 @@ class RequestViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         //imageView = galleryImage
         
         presentViewController(picker, animated: true, completion: nil)
-        uploadImagePressed(picker)
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        //uploadImagePressed(picker)
         picker.dismissViewControllerAnimated(true, completion: nil)
         
     }

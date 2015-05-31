@@ -290,7 +290,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wVW-Ic-nAa" kind="show" id="7md-Ac-VBv"/>
+                                    <segue destination="wVW-Ic-nAa" kind="show" id="GnQ-7O-zKu"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gq1-yV-KSv">
@@ -446,11 +446,11 @@
                                     <action selector="pickFromGallery:" destination="wVW-Ic-nAa" eventType="touchUpInside" id="yuO-fG-i17"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9h-Vh-1Nw">
-                                <rect key="frame" x="484" y="445" width="100" height="128"/>
-                            </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tZi-8d-Y69">
                                 <rect key="frame" x="16" y="445" width="100" height="128"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9h-Vh-1Nw">
+                                <rect key="frame" x="484" y="445" width="100" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -496,6 +496,7 @@
                         <outlet property="createButton" destination="toj-Va-tx2" id="KW2-Ob-7pf"/>
                         <outlet property="galleryButton" destination="4LL-8t-7BO" id="FaL-9M-acp"/>
                         <outlet property="galleryImage" destination="Q9h-Vh-1Nw" id="abf-cf-LW0"/>
+                        <outlet property="imageView" destination="tZi-8d-Y69" id="yeV-lz-DWl"/>
                         <outlet property="pickerView" destination="O1J-ti-rUZ" id="Qrw-Id-GIC"/>
                     </connections>
                 </viewController>

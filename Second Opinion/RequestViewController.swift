@@ -21,9 +21,9 @@ class RequestViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var galleryButton: UIButton!
     
 
-    @IBOutlet weak var galleryImage: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraImage: UIImageView!
-    var imageView: UIImageView!
+    //var imageView: UIImageView!
 
     
     override func viewDidLoad() {
@@ -46,7 +46,7 @@ class RequestViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         picker.delegate = self
         picker.sourceType = .Camera
-        imageView = cameraImage
+        //imageView = cameraImage
         
         presentViewController(picker, animated: true, completion: nil)
     }
@@ -56,19 +56,19 @@ class RequestViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         picker.delegate = self
         picker.sourceType = .PhotoLibrary
-        imageView = galleryImage
+        //imageView = galleryImage
         
         presentViewController(picker, animated: true, completion: nil)
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        imageView.image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         picker.dismissViewControllerAnimated(true, completion: nil)
         
     }
     
     @IBAction func uploadImagePressed(sender: AnyObject) {
-        imageView.hidden = false
+        self.imageView.hidden = false
         
         var images = PFObject(className: "requests")
         println("Entered else")

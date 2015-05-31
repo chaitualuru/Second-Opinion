@@ -29,6 +29,9 @@ class RequestViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBOutlet weak var specialitypicker: UIPickerView!
     
+    @IBOutlet weak var galleryButton: UIButton!
+    
+    @IBOutlet weak var cameraButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,11 +94,13 @@ class RequestViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         if self.flag == 1{
             imageView.hidden = false
+            galleryButton.hidden = true
             imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
             picker.dismissViewControllerAnimated(true, completion: nil)
         }
         else{
             imageView2.hidden = false
+            cameraButton.hidden = true
             picker.dismissViewControllerAnimated(true, completion: nil)
         }
     }

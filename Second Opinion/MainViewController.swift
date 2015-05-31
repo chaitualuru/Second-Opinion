@@ -9,11 +9,21 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    static var requestCreated = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if MainViewController.requestCreated {
+            let alert = UIAlertView()
+            alert.title = "All Set!"
+            alert.message = "Your request has been created. A doctor will contact you soon!"
+            alert.addButtonWithTitle("OK")
+            alert.show()
+            MainViewController.requestCreated = false
+        }
     }
 
     override func didReceiveMemoryWarning() {

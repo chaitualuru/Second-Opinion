@@ -35,6 +35,8 @@
 		FF8244C31B1A5DD500CD62AB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8244C21B1A5DD500CD62AB /* back.png */; };
 		FF8244C51B1A634200CD62AB /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8244C41B1A634200CD62AB /* menu.png */; };
 		FF8244C71B1A640600CD62AB /* Checked Active.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8244C61B1A640600CD62AB /* Checked Active.png */; };
+		FFB9B4FA1B1A7327005D0AE8 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9B4F91B1A7327005D0AE8 /* RequestViewController.swift */; };
+		FFB9B4FE1B1A7902005D0AE8 /* Camera Button.png in Resources */ = {isa = PBXBuildFile; fileRef = FFB9B4FD1B1A7902005D0AE8 /* Camera Button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		FF8244C21B1A5DD500CD62AB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		FF8244C41B1A634200CD62AB /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		FF8244C61B1A640600CD62AB /* Checked Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked Active.png"; sourceTree = "<group>"; };
+		FFB9B4F91B1A7327005D0AE8 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		FFB9B4FD1B1A7902005D0AE8 /* Camera Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera Button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 				BA3884491B19DF7100A63A0A /* MainViewController.swift */,
 				BA38844B1B19DF8800A63A0A /* LoginViewController.swift */,
 				BA38844D1B19DF9900A63A0A /* RegisterViewController.swift */,
+				FFB9B4F91B1A7327005D0AE8 /* RequestViewController.swift */,
 				FF19F60D1B19CF4D0063B39C /* Main.storyboard */,
 				FF19F6101B19CF4D0063B39C /* Images.xcassets */,
 				FF19F63F1B19D8360063B39C /* SplashScreen.png */,
@@ -168,6 +173,7 @@
 		FF19F6041B19CF4D0063B39C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FFB9B4FD1B1A7902005D0AE8 /* Camera Button.png */,
 				FF8244C61B1A640600CD62AB /* Checked Active.png */,
 				FF8244C41B1A634200CD62AB /* menu.png */,
 				FF8244C21B1A5DD500CD62AB /* back.png */,
@@ -274,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF8244C71B1A640600CD62AB /* Checked Active.png in Resources */,
+				FFB9B4FE1B1A7902005D0AE8 /* Camera Button.png in Resources */,
 				FF19F60F1B19CF4D0063B39C /* Main.storyboard in Resources */,
 				FF8244C31B1A5DD500CD62AB /* back.png in Resources */,
 				FF8244C51B1A634200CD62AB /* menu.png in Resources */,
@@ -299,6 +306,7 @@
 			files = (
 				BA38844C1B19DF8800A63A0A /* LoginViewController.swift in Sources */,
 				BA38844E1B19DF9900A63A0A /* RegisterViewController.swift in Sources */,
+				FFB9B4FA1B1A7327005D0AE8 /* RequestViewController.swift in Sources */,
 				BA38844A1B19DF7100A63A0A /* MainViewController.swift in Sources */,
 				FF19F60A1B19CF4D0063B39C /* Second_Opinion.xcdatamodeld in Sources */,
 				FF19F6071B19CF4D0063B39C /* AppDelegate.swift in Sources */,

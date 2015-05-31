@@ -399,7 +399,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE BETWEEN (HH:MM | 24-HOUR CLOCK)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybx-RM-lrD">
-                                <rect key="frame" x="16" y="332" width="242" height="21"/>
+                                <rect key="frame" x="16" y="312" width="242" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="203" id="7J4-S1-3EU"/>
                                     <constraint firstAttribute="height" constant="21" id="KuI-OM-8Pq"/>
@@ -417,7 +417,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89d-OB-syE">
-                                <rect key="frame" x="16" y="370" width="129" height="30"/>
+                                <rect key="frame" x="16" y="350" width="129" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="13S-Fg-r8y"/>
                                     <constraint firstAttribute="width" constant="129" id="3is-1H-Pi2"/>
@@ -426,7 +426,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRd-NT-mTq">
-                                <rect key="frame" x="455" y="370" width="129" height="30"/>
+                                <rect key="frame" x="455" y="350" width="129" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="129" id="ndO-Qa-apJ"/>
                                     <constraint firstAttribute="height" constant="30" id="pNl-vu-yQ2"/>
@@ -459,7 +459,7 @@
                             <constraint firstItem="O1J-ti-rUZ" firstAttribute="top" secondItem="O6d-1L-gpg" secondAttribute="bottom" constant="120" id="taJ-Ue-65q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D31-pv-q27" secondAttribute="trailing" constant="356" id="u5M-bJ-veV"/>
                             <constraint firstItem="D31-pv-q27" firstAttribute="top" secondItem="Cig-2B-iH1" secondAttribute="bottom" constant="50" id="vfL-aQ-234"/>
-                            <constraint firstItem="ybx-RM-lrD" firstAttribute="top" secondItem="O1J-ti-rUZ" secondAttribute="bottom" constant="10" id="za9-zX-Ozr"/>
+                            <constraint firstItem="ybx-RM-lrD" firstAttribute="top" secondItem="O1J-ti-rUZ" secondAttribute="bottom" constant="-10" id="za9-zX-Ozr"/>
                             <constraint firstItem="2QV-U1-LjC" firstAttribute="top" secondItem="O6d-1L-gpg" secondAttribute="bottom" id="zq6-Oa-0BR"/>
                         </constraints>
                         <variation key="default">

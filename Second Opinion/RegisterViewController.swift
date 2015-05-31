@@ -50,7 +50,8 @@ class RegisterViewController: UIViewController {
         }
         
         NSUserDefaults.standardUserDefaults().setObject(self.emailTextField.text, forKey: kemailKey)
-        NSUserDefaults.standardUserDefaults().setObject(self.passwordTextField.text, forKey: kpasswordKey)
+        NSUserDefaults.standardUserDefaults().setObject(self.mobileNumberTextField.text, forKey: "kmobileKey")
+        NSUserDefaults.standardUserDefaults().setObject(self.firstNameTextField.text, forKey: "kuserKey")
         NSUserDefaults.standardUserDefaults().synchronize()
         
         self.dismissViewControllerAnimated(true, completion: nil)

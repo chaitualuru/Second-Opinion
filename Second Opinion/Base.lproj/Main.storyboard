@@ -363,6 +363,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginOnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2v-Ul-hNm"/>
+                                    <action selector="uploadButtonPressed:" destination="wVW-Ic-nAa" eventType="touchUpInside" id="4dI-sM-BrY"/>
                                     <segue destination="Qtw-Jl-Mab" kind="show" identifier="createRequestSegue" id="tLh-12-uUR"/>
                                 </connections>
                             </button>
@@ -375,14 +376,12 @@
                                 <state key="normal" title="Button" image="Camera Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="takeAPicture:" destination="wVW-Ic-nAa" eventType="touchUpInside" id="dsb-GP-4Hl"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Describe your condition" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-2B-iH1">
-                                <rect key="frame" x="16" y="100" width="568" height="30"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1J-ti-rUZ">
-                                <rect key="frame" x="0.0" y="160" width="600" height="162"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O1J-ti-rUZ">
+                                <rect key="frame" x="0.0" y="162" width="600" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="FGP-H5-Li7" id="962-zB-P5o"/>
                                     <outlet property="delegate" destination="FGP-H5-Li7" id="p1g-If-yeo"/>
@@ -434,9 +433,38 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLa-YG-qU7">
+                                <rect key="frame" x="435" y="484" width="168" height="30"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFromGallery:" destination="wVW-Ic-nAa" eventType="touchUpInside" id="Xab-rp-dVt"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sZ6-l8-srZ">
+                                <rect key="frame" x="462" y="442" width="115" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="aNG-ws-Qyx"/>
+                                    <constraint firstAttribute="height" constant="128" id="hyy-jt-Oyz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lY-F0-4J9">
+                                <rect key="frame" x="11" y="442" width="115" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="HCq-ua-jci"/>
+                                    <constraint firstAttribute="width" constant="115" id="pcq-A8-Kal"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Describe your condition" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-2B-iH1">
+                                <rect key="frame" x="16" y="100" width="568" height="30"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="sZ6-l8-srZ" secondAttribute="trailing" constant="7" id="0AR-Lz-xpC"/>
                             <constraint firstItem="O1J-ti-rUZ" firstAttribute="leading" secondItem="FGP-H5-Li7" secondAttribute="leadingMargin" constant="-16" id="1Lg-Qf-tcl"/>
                             <constraint firstItem="89d-OB-syE" firstAttribute="leading" secondItem="FGP-H5-Li7" secondAttribute="leadingMargin" id="449-op-cyO"/>
                             <constraint firstItem="D31-pv-q27" firstAttribute="leading" secondItem="FGP-H5-Li7" secondAttribute="leadingMargin" id="7Do-Ib-N2H"/>
@@ -446,15 +474,22 @@
                             <constraint firstItem="O1J-ti-rUZ" firstAttribute="top" secondItem="D31-pv-q27" secondAttribute="bottom" constant="-41" id="Ca7-QM-g4I"/>
                             <constraint firstItem="G5E-zw-PgE" firstAttribute="leading" secondItem="FGP-H5-Li7" secondAttribute="leadingMargin" constant="12" id="Jzb-Op-ZOq"/>
                             <constraint firstItem="toj-Va-tx2" firstAttribute="top" secondItem="O6d-1L-gpg" secondAttribute="bottom" constant="460" id="Quq-LU-GT4"/>
+                            <constraint firstItem="zId-my-1LH" firstAttribute="top" secondItem="0lY-F0-4J9" secondAttribute="bottom" constant="30" id="S8Q-a1-EKg"/>
+                            <constraint firstItem="zId-my-1LH" firstAttribute="top" secondItem="sZ6-l8-srZ" secondAttribute="bottom" constant="30" id="SvZ-Vv-IRB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2QV-U1-LjC" secondAttribute="trailing" constant="-16" id="Tzg-7c-Ze5"/>
+                            <constraint firstItem="zId-my-1LH" firstAttribute="top" secondItem="VLa-YG-qU7" secondAttribute="bottom" constant="86" id="V8N-ZF-Q0R"/>
+                            <constraint firstItem="0lY-F0-4J9" firstAttribute="leading" secondItem="FGP-H5-Li7" secondAttribute="leadingMargin" constant="5" id="YzG-tt-w4E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="O1J-ti-rUZ" secondAttribute="trailing" constant="-16" id="ZWn-Pi-Hvb"/>
                             <constraint firstItem="Cig-2B-iH1" firstAttribute="leading" secondItem="FGP-H5-Li7" secondAttribute="leadingMargin" id="Zwx-SL-rrK"/>
                             <constraint firstItem="Cig-2B-iH1" firstAttribute="trailing" secondItem="FGP-H5-Li7" secondAttribute="trailingMargin" id="aj0-Re-VGg"/>
                             <constraint firstItem="89d-OB-syE" firstAttribute="top" secondItem="ybx-RM-lrD" secondAttribute="bottom" constant="17" id="cWB-gn-9FA"/>
                             <constraint firstItem="Cig-2B-iH1" firstAttribute="top" secondItem="O6d-1L-gpg" secondAttribute="bottom" constant="80" id="g0k-k7-fkm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sZ6-l8-srZ" secondAttribute="trailing" constant="164" id="gvp-1Z-Xu4"/>
                             <constraint firstItem="ybx-RM-lrD" firstAttribute="leading" secondItem="FGP-H5-Li7" secondAttribute="leadingMargin" id="hAq-Ag-7xq"/>
                             <constraint firstItem="SRd-NT-mTq" firstAttribute="trailing" secondItem="FGP-H5-Li7" secondAttribute="trailingMargin" id="j7m-FE-xyJ"/>
                             <constraint firstItem="2QV-U1-LjC" firstAttribute="leading" secondItem="FGP-H5-Li7" secondAttribute="leadingMargin" constant="-16" id="llt-9p-Wft"/>
+                            <constraint firstItem="zId-my-1LH" firstAttribute="top" secondItem="sZ6-l8-srZ" secondAttribute="bottom" constant="140" id="lqn-Va-SU4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VLa-YG-qU7" secondAttribute="trailing" constant="19" id="mab-zd-WUx"/>
                             <constraint firstItem="SRd-NT-mTq" firstAttribute="leading" secondItem="89d-OB-syE" secondAttribute="trailing" constant="142" id="mvV-av-aNS"/>
                             <constraint firstItem="O1J-ti-rUZ" firstAttribute="top" secondItem="O6d-1L-gpg" secondAttribute="bottom" constant="120" id="taJ-Ue-65q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D31-pv-q27" secondAttribute="trailing" constant="356" id="u5M-bJ-veV"/>
@@ -472,7 +507,13 @@
                     </view>
                     <connections>
                         <outlet property="createButton" destination="toj-Va-tx2" id="KW2-Ob-7pf"/>
+                        <outlet property="descprtxtfield" destination="Cig-2B-iH1" id="0H8-RN-gx7"/>
+                        <outlet property="endtimetxtfield" destination="SRd-NT-mTq" id="FhR-5U-zae"/>
+                        <outlet property="imageView" destination="sZ6-l8-srZ" id="PZC-ke-OcV"/>
+                        <outlet property="imageView2" destination="0lY-F0-4J9" id="lYM-JR-osE"/>
                         <outlet property="pickerView" destination="O1J-ti-rUZ" id="Qrw-Id-GIC"/>
+                        <outlet property="specialitypicker" destination="O1J-ti-rUZ" id="Rrz-I7-Pbm"/>
+                        <outlet property="starttimetxtfield" destination="89d-OB-syE" id="ZR0-qo-aRc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOq-hl-QmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
